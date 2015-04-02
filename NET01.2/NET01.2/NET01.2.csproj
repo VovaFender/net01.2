@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Math\MathExtensions.cs" />
     <Compile Include="Math\Matrix\DiagonalMatrix.cs" />
+    <Compile Include="Math\Matrix\MatrixChangedEventArgs.cs" />
     <Compile Include="Math\Matrix\SquareMatrix.cs" />
     <Compile Include="Math\UInt128\UInt128.cs" />
     <Compile Include="Program.cs" />

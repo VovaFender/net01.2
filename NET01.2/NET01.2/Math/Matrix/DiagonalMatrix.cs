@@ -6,27 +6,24 @@ using System.Threading.Tasks;
 
 namespace NET01._2.Math.Matrix
 {
-    class DiagonalMatrix<T> : SquareMatrix<T>
+    public class DiagonalMatrix<T> : SquareMatrix<T>
     {
         public T this[int i, int j]
         {
             get
             {
                 if (i == j)
-                {
-                    return this.data[size*i + j];
-                }
+                    return data[i];
                 return default(T);
             }
             set
             {
                 if (i != j)
-                {
                     throw new ArgumentException("only main diagonal elements can be accessed");
-                }
-                if (data[size * i + j] != value)
+                
+                if (!data[i].Equals(value))
                 {
-                    data[size * i + j] = value;
+                    data[i] = value;
                     OnMatrixChange(new MatrixChangedEventArgs<T>(i, j, value));
                 }
             }
@@ -36,11 +33,17 @@ namespace NET01._2.Math.Matrix
         {
             if (size <= 0)
             {
-                throw new ArgumentException("size cannot be null or negative");
+                throw new ArgumentException("size cannot be zero or negative");
             }
 
+            this.size = size;
             data = new T[size];
         } 
 
+        public DiagonalMatrix(int size, T initialValue) : this(size)
+        {
+            for (int i = 0; i < size; i++)                
+                data[i] = initialValue;
+        } 
     }
 }

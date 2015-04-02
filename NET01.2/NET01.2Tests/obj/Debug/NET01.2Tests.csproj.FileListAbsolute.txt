@@ -1,0 +1,7 @@
+D:\Tasks\01.2\NET01.2\NET01.2Tests\bin\Debug\NET01.2Tests.dll
+D:\Tasks\01.2\NET01.2\NET01.2Tests\bin\Debug\NET01.2Tests.pdb
+D:\Tasks\01.2\NET01.2\NET01.2Tests\bin\Debug\NET01.2.exe
+D:\Tasks\01.2\NET01.2\NET01.2Tests\bin\Debug\NET01.2.pdb
+D:\Tasks\01.2\NET01.2\NET01.2Tests\obj\Debug\NET01.2Tests.csprojResolveAssemblyReference.cache
+D:\Tasks\01.2\NET01.2\NET01.2Tests\obj\Debug\NET01.2Tests.dll
+D:\Tasks\01.2\NET01.2\NET01.2Tests\obj\Debug\NET01.2Tests.pdb

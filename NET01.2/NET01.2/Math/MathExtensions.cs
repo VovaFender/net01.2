@@ -8,6 +8,6 @@ using NET01._2.Math.Matrix;
 namespace NET01._2.Math
 {
     public static class MathExtensions
-    {        
+    {    
     }
 }
